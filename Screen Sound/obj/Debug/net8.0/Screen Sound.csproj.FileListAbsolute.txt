@@ -1,0 +1,14 @@
+E:\DEV\Orientacao_Objetos\Screen Sound\bin\Debug\net8.0\Screen Sound.exe
+E:\DEV\Orientacao_Objetos\Screen Sound\bin\Debug\net8.0\Screen Sound.deps.json
+E:\DEV\Orientacao_Objetos\Screen Sound\bin\Debug\net8.0\Screen Sound.runtimeconfig.json
+E:\DEV\Orientacao_Objetos\Screen Sound\bin\Debug\net8.0\Screen Sound.dll
+E:\DEV\Orientacao_Objetos\Screen Sound\bin\Debug\net8.0\Screen Sound.pdb
+E:\DEV\Orientacao_Objetos\Screen Sound\obj\Debug\net8.0\Screen Sound.GeneratedMSBuildEditorConfig.editorconfig
+E:\DEV\Orientacao_Objetos\Screen Sound\obj\Debug\net8.0\Screen Sound.AssemblyInfoInputs.cache
+E:\DEV\Orientacao_Objetos\Screen Sound\obj\Debug\net8.0\Screen Sound.AssemblyInfo.cs
+E:\DEV\Orientacao_Objetos\Screen Sound\obj\Debug\net8.0\Screen Sound.csproj.CoreCompileInputs.cache
+E:\DEV\Orientacao_Objetos\Screen Sound\obj\Debug\net8.0\Screen Sound.dll
+E:\DEV\Orientacao_Objetos\Screen Sound\obj\Debug\net8.0\refint\Screen Sound.dll
+E:\DEV\Orientacao_Objetos\Screen Sound\obj\Debug\net8.0\Screen Sound.pdb
+E:\DEV\Orientacao_Objetos\Screen Sound\obj\Debug\net8.0\Screen Sound.genruntimeconfig.cache
+E:\DEV\Orientacao_Objetos\Screen Sound\obj\Debug\net8.0\ref\Screen Sound.dll
