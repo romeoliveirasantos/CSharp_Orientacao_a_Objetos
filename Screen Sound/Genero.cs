@@ -1,4 +1,11 @@
 ﻿class Genero
 {
-    public string Nome { get; set; }
+
+    //construtor
+    public Genero(string nome)
+    {
+        Nome = nome;
+    }
+
+    public string Nome { get; }
 }

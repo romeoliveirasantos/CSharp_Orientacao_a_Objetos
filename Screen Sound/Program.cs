@@ -46,26 +46,38 @@ musica1.ExibirFichaTecnica();
 musica2.ExibirFichaTecnica();
 */
 
-/*
+
 //instanciando album e adicionando músicas na lista
-Album albumDoQueen = new() { 
-    Nome = "A night at the Opera"
-};
-Musica musica1 = new Musica() {
-    Nome = "Love of my life",
-    Duracao = 213
+
+//a classe musica tem um construtor que pede um artista antes de criar a musica
+/*
+Banda queen = new Banda("Queen");
+Album albumDoQueen = new("A night at the Opera"){};
+Genero rock = new("Rock");
+
+Musica musica1 = new Musica(queen, "Love of my life", rock) {
+    
+    Duracao = 213,
+    Disponivel = true
     
 };
-Musica musica2 = new Musica() {
-    Nome = "Bohemian Rhapsody",
-    Duracao = 354
+Musica musica2 = new Musica(queen, "Bohemian Rhapsody", rock) {
+    
+    Duracao = 354,
+    Disponivel = false
 };
 
 albumDoQueen.AdicionarMusica(musica1);
 albumDoQueen.AdicionarMusica(musica2);
+queen.AdicionarAlbum(albumDoQueen);
 
-albumDoQueen.exibirMusicasDoAlbum();
+
+musica1.ExibirFichaTecnica();
+musica2.ExibirFichaTecnica();
+queen.ExibirDiscografia();
 */
+
+
 
 /*
 instanciando objeto contaBancaria e atribuindo valores para seus atributos
@@ -289,3 +301,92 @@ estoque2.ExibirProdutos();
  */
 
 
+
+/*
+ * Para saber mais: classes no mundo real
+ * Aplicações orientadas geralmente possuem várias classes em suas estruturas. No entanto, é importante observar que a quantidade exata de classes pode variar dependendo do tamanho e complexidade do sistema. Esses tipos de aplicativos geralmente são compostos por várias classes que representam diferentes componentes e funcionalidades do sistema.
+
+Uma aplicação possui quantas classes?
+Aqui estão algumas classes comuns que podem estar presentes em programas desse tipo:
+
+Classe de Usuário: Representa um usuário registrado no sistema e contém informações como nome, email, senha, histórico de atividades, por exemplo.
+
+Classe de Mídia: Para programas de streaming de vídeo, essa classe representa uma peça de mídia, como um filme, série ou episódio. Para programas de streaming de música, essa classe pode representar uma faixa musical.
+
+Classe de Playlist: Representa uma lista de mídias selecionadas pelo usuário para reprodução contínua.
+
+Classe de Categoria: Para programas de streaming de vídeo, essa classe representa uma categoria ou gênero, como ação, comédia, drama etc. Para programas de streaming de música, essa classe pode representar gêneros musicais, como rock, pop, hip-hop, por exemplo.
+
+Classe de Avaliação: Representa uma avaliação ou classificação dada pelo usuário a uma mídia específica.
+
+Classe de Pagamento: Para programas com assinatura ou sistema de compra, essa classe representa informações de pagamento do usuário.
+
+Classe de Reserva: Para aplicações como Airbnb, essa classe representa uma reserva feita por um usuário para uma acomodação específica.
+
+Classe de Anúncio: No caso do Airbnb, essa classe representa um anúncio de propriedade feito por um usuário que deseja disponibilizá-la para reservas.
+
+O número total de classes pode variar amplamente, dependendo da arquitetura e dos recursos específicos implementados no sistema. Leve esse conhecimento em conta quando for desenvolver seus projetos!
+
+ */
+/*
+ * Construtor
+ *     class Genero
+{
+            public string Nome { get; }
+
+            public Genero(string nome)
+            {
+                    Nome = nome;
+            }
+}
+Nesse exemplo, adicionamos um construtor à classe Genero que recebe 
+um parâmetro nome. O construtor atribui o valor do parâmetro à 
+propriedade Nome da classe Genero.
+
+Usar uma classe sem construtor no C# não garante que o objeto 
+seja inicializado corretamente. Sem um construtor, 
+não há um ponto de entrada definido para configurar o estado 
+inicial do objeto. Isso pode levar a objetos em um estado inválido 
+ou inconsistente, o que pode resultar em comportamento inesperado ou
+erros em tempo de execução.
+
+Usar um construtor auxilia na inicialização dos estados.
+ Um construtor permite que você inicialize os estados de um objeto no momento da sua criação. Isso garante que o objeto seja criado com os valores corretos e em um estado válido desde o início.
+
+Usar um construtor facilita o uso dos objetos.
+Um construtor torna a criação de objetos mais fácil e mais intuitiva. Os parâmetros do construtor podem ser usados para fornecer os valores iniciais necessários para configurar o objeto corretamente.
+
+Usar um construtor auxilia nos dados de entrada das instâncias.
+Os construtores podem ser usados para validar os valores de entrada e garantir que sejam válidos antes de atribuí-los às propriedades do objeto. Isso ajuda a prevenir inconsistências e erros no uso do objeto.
+ */
+
+//desafio
+//criar classe podcast que já é criado com um host, nome e total de epsódios definidos
+//metodos - AdicionarEpsodio e ExibirDetalhes
+
+//O método ExibirDetalhes() deve mostrar o nome do podcast e o
+//host na primeira linha, seguido pela lista de episódios ordenados
+//por sequência e por fim o total de episódios.
+
+//O episódio deve ter um número, um título, uma duração e um resumo.
+//O resumo do episódio será concatenado com os valores de número,
+//título, duração e convidados do episódio.
+
+//Para finalizar, todo episódio possui um método AdicionarConvidados(),
+//que será chamado quantas vezes forem necessárias.
+
+Podcast PodFalar = new Podcast("Romário Oliveira", "PodFalar");
+Episodio episodio1 = new Episodio("Primeiro Episódio","Resumo do episódio 1",1,4);
+Convidado ConvidadoEp1 = new Convidado("Victor Santos");
+
+Episodio episodio2 = new Episodio("Segundo Episódio", "Resumo do episódio 2", 2, 3);
+Convidado ConvidadoEp2 = new Convidado("Jefferson Guedes");
+
+
+episodio1.AdicionarConvidados(ConvidadoEp1);
+PodFalar.AdicionarEpisodio(episodio1);
+
+episodio2.AdicionarConvidados(ConvidadoEp2);
+PodFalar.AdicionarEpisodio(episodio2);
+
+PodFalar.ExibirDetalhes();
