@@ -375,18 +375,37 @@ Os construtores podem ser usados para validar os valores de entrada e garantir q
 //Para finalizar, todo episódio possui um método AdicionarConvidados(),
 //que será chamado quantas vezes forem necessárias.
 
-Podcast PodFalar = new Podcast("Romário Oliveira", "PodFalar");
-Episodio episodio1 = new Episodio("Primeiro Episódio","Resumo do episódio 1",1,4);
-Convidado ConvidadoEp1 = new Convidado("Victor Santos");
+//Podcast PodFalar = new Podcast("Romário Oliveira", "PodFalar");
+//Episodio episodio1 = new Episodio("Primeiro Episódio","Resumo do episódio 1",1,4);
+//Convidado ConvidadoEp1 = new Convidado("Victor Santos");
 
-Episodio episodio2 = new Episodio("Segundo Episódio", "Resumo do episódio 2", 2, 3);
-Convidado ConvidadoEp2 = new Convidado("Jefferson Guedes");
+//Episodio episodio2 = new Episodio("Segundo Episódio", "Resumo do episódio 2", 2, 3);
+//Convidado ConvidadoEp2 = new Convidado("Jefferson Guedes");
 
 
-episodio1.AdicionarConvidados(ConvidadoEp1);
-PodFalar.AdicionarEpisodio(episodio1);
+//episodio1.AdicionarConvidados(ConvidadoEp1);
+//PodFalar.AdicionarEpisodio(episodio1);
 
-episodio2.AdicionarConvidados(ConvidadoEp2);
-PodFalar.AdicionarEpisodio(episodio2);
+//episodio2.AdicionarConvidados(ConvidadoEp2);
+//PodFalar.AdicionarEpisodio(episodio2);
 
-PodFalar.ExibirDetalhes();
+//PodFalar.ExibirDetalhes();
+
+//Episodio ep1 = new(2, "Técnicas de facilitação", 45);
+//ep1.AdicionarConvidados("Maria");
+//ep1.AdicionarConvidados("Marcelo");
+
+
+//Episodio ep2 = new(1, "Técnicas de aprendizado", 67);
+//ep2.AdicionarConvidados("Marcos");
+//ep2.AdicionarConvidados("Gisele");
+//ep2.AdicionarConvidados("Flávia");
+
+
+//PodCast podcast = new("Podcast especial", "Daniel");
+//podcast.AdicionarEpisodio(ep1);
+//podcast.AdicionarEpisodio(ep2);
+//podcast.ExibirDetalhes();
+
+//Herança - interface - polimorfismo
+

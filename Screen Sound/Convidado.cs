@@ -1,9 +1,9 @@
-﻿class Convidado
-{
-    public Convidado(string nome)
-    {
-        Nome = nome;
-    }
+﻿//class Convidado
+//{
+//    public Convidado(string nome)
+//    {
+//        Nome = nome;
+//    }
 
-    public string Nome { get; set; }
-}
+//    public string Nome { get; set; }
+//}
